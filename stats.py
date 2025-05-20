@@ -5,4 +5,7 @@ def count_words(text):
 
 def count_characters(text):
     lower_case = str.lower(text)
-    
+    characters = {}
+    for lower_case in lower_case:
+        characters[lower_case] += 1
+    return characters
